@@ -1,18 +1,20 @@
 from Crypto.PublicKey import RSA
 
-new_key = RSA.generate(4096, e=65537)
+def gen():
 
-private_key = new_key.exportKey("PEM")
+    new_key = RSA.generate(4096, e=65537)
 
-public_key = new_key.publickey().exportKey("PEM")
+    private_key = new_key.exportKey("PEM")
 
-print(private_key)
+    public_key = new_key.publickey().exportKey("PEM")
 
-fd = open("private_key.pem", "wb")
-fd.write(private_key)
-fd.close()
 
-print(public_key)
-fd = open("public_key.pem", "wb")
-fd.write(public_key)
-fd.close()
+
+    fd = open("private_key.pem", "wb")
+    fd.write(private_key)
+    fd.close()
+
+    print(public_key)
+    fd = open("public_key.pem", "wb")
+    fd.write(public_key)
+    fd.close()

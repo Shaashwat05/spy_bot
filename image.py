@@ -17,9 +17,7 @@ def get_image():
 
         if((int(time.time()-start)) == 5 and count < 4):
             start+=5
-            print(time.time())
             count+=1
-            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             images.append(frame)
         
         if(count >= 4):

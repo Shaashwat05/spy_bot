@@ -24,15 +24,4 @@ def decrypt_blob(encrypted_blob, private_key):
 
     return zlib.decompress(decrypted)
 
-fd = open("private_key.pem", "rb")
-private_key = fd.read()
-fd.close()
 
-fd = open("encrypted_img.jpg", "rb")
-encrypted_blob = fd.read()
-fd.close()
-
-#Write the decrypted contents to a file
-fd = open("decrypted_img.jpg", "wb")
-fd.write(decrypt_blob(encrypted_blob, private_key))
-fd.close()
