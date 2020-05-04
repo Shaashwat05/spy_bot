@@ -23,7 +23,9 @@ crypto
 Download a python interpeter preferable a version beyond 3.0. Install the prerequisute libraries given above.Also, the above prerequisits may not be enough to run firebase, but they easily be identified from the errors and repectively pip install them. Replace the firebase url with proper credentials/requirements. Run the main_deploy.py file to capture an image , encrypt it, and deploy. Only after encrypting can the main_retrive.py be run, or else it will give error.
 
 ```
-$main1.ipynb   
+$ main_deploy.py
+
+$ main_retrive.py
 
 ```
 
