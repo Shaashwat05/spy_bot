@@ -34,6 +34,11 @@ $ main_retrive.py
 $ git clone https://github.com/Shaashwat05/spy_bot
 ```
 
+## Decrypted Image
+The output image is decrypted losslessly.
+
+![The input Image to cartoonize.py](https://github.com/Shaashwat05/spy_bot/blob/master/gallery/decrypted_img.jpg)
+
 
 ## Built With
 
